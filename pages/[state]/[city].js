@@ -1,5 +1,5 @@
 import ProductDetails from "../../components/ProductDetails";
-import { getCity, getTopCities } from "../../util/cities";
+import { getCity, getTopCities } from "../../util/cities.js";
 
 export async function getStaticPaths() {
   const topCites = getTopCities();

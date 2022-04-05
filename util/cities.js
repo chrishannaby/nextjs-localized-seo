@@ -1,4 +1,4 @@
-import cities from "./cities.json";
+const cities = require("./cities.json");
 
 function normalize(thing) {
   return thing.toLowerCase().replace(/ /g, "-").replace(/,/g, "");
@@ -21,4 +21,10 @@ function getTopCities(num = 5) {
   return cities.sort((a, b) => a.rank - b.rank).slice(0, num);
 }
 
-export { getCity, getTopCities };
+function getAllPaths() {
+  return cities.map((c) => {
+    return c.path;
+  });
+}
+
+module.exports = { getCity, getTopCities, getAllPaths };
