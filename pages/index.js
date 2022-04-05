@@ -1,7 +1,7 @@
 import ProductDetails from "../components/ProductDetails";
 import { NextSeo } from "next-seo";
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <NextSeo
