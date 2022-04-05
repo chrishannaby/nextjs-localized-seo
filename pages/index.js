@@ -1,4 +1,5 @@
 import ProductDetails from "../components/ProductDetails";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
